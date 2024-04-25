@@ -1,0 +1,63 @@
+input:valid{
+    background-color:goldenrod;
+}
+input:invalid{
+    background-color: rgb(169, 167, 167);
+}
+
+.center {
+    display: flex;
+    /* property is used in CSS to horizontally center the content of a flex container.
+     When applied to a flex container, it aligns the flex items along the main axis, 
+     which is typically the horizontal axis. */
+    justify-content: center;
+
+/* property is used in CSS to vertically center the flex items within a flex container.
+ When applied to a flex container, it aligns the flex items along the cross axis,
+  which is typically the vertical axis.    align-items: center; */
+  align-items: center;
+
+    height: 100vh;
+
+    
+}
+.login {
+    padding: 25px;
+    width: 300px;
+
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+  
+  .video-foreground {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video-foreground video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+  }
